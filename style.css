@@ -1,4 +1,11 @@
+/* RESET CSS */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 /* styles.css */
+
 .header {
     display: flex;
     justify-content: space-between; 
