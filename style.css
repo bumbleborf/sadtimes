@@ -1,51 +1,140 @@
-/* RESET CSS */
+/* Reset CSS - Ensures consistent styling across browsers */
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+  margin: 0; /* Removes default margin */
+  padding: 0; /* Removes default padding */
 }
-/* styles.css */
 
-.header {
-    display: flex;
-    justify-content: space-between; 
-    align-items: center;
-    padding: 10px; 
-  }
-  .logo img {
-    max-width: 400px; 
-    height: auto; 
-  }
-  .social-icons img {
-    width: 30px;
-    height: 30px;
-    margin-left: 10px;
-  }
+/* Remove default button styling for a clean slate */
+button {
+  background: none; /* Removes default background */
+  border: none; /* Removes default border */
+  padding: 0; /* Removes default padding */
+  margin: 0; /* Removes default margin */
+  font: inherit; /* Inherits font from parent element */
+  color: inherit; /* Inherits color from parent element */
+  cursor: pointer; /* Ensures cursor changes to pointer on hover */
+  outline: none; /* Removes default focus outline */
+}
+
+/* Basic page styling */
 body {
-    background-image: url("./images/background1.jpg");
-    height: 100vh;
-    width: 100vw;
-    font-family: "Inconsolata", monospace;
-    display: flex;
-    flex-direction: column; 
+  background: url('./images/background1.jpg') center / cover no-repeat; /* Sets background image, centers it, and ensures it covers the entire page */
+  height: 100vh; /* Sets the height to 100% of the viewport height */
+  width: 100vw; /* Sets the width to 100% of the viewport width */
+  font-family: 'Inconsolata', monospace; /* Sets a monospaced font for the body */
+  display: flex; /* Applies flexbox layout */
+  flex-direction: column; /* Arranges children in a column */
 }
+
+/* Header styles */
+.header {
+  display: flex; /* Applies flexbox layout */
+  justify-content: space-between; /* Distributes space between children */
+  align-items: center; /* Aligns children vertically in the center */
+  padding: 30px 0; /* Adds vertical padding */
+}
+
+.logo {
+  margin-left: 5%; /* Adds left margin */
+}
+
+.logo img {
+  max-width: 250px; /* Limits maximum width */
+  height: auto; /* Maintains aspect ratio */
+}
+
+.social-icons {
+  margin-right: 5%; /* Adds right margin */
+}
+
+.social-icons img {
+  width: 30px; /* Sets width */
+  height: 30px; /* Sets height */
+  margin-left: 10px; /* Adds left margin between icons */
+}
+
+/* Artist list styles */
 .artistlist {
-    height: 300px;
-    width: 600px;
-    margin-right: 100px;
-    float: right;
+  max-width: 600px; /* Sets maximum width */
+  min-width: 400px; /* Sets minimum width */
+  height: auto; /* Maintains aspect ratio */
+  margin-right: 12%; /* Adds right margin */
 }
+
+/* Intro section styles */
 .intro {
-    color: whitesmoke;
-    width: 1100px;
-    height: 100px;
-    margin: 0 auto;
-    padding-left: 20px;
-    padding-right: 20px;
-    background-color: hwb(40 97% 2% / 0.022);
+  margin: 0 auto; /* Centers the intro section horizontally */
+  width: 80%; /* Sets width to 80% of the parent */
+  display: flex; /* Applies flexbox layout */
+  justify-content: start; /* Aligns children to the start */
 }
+
+.intro section {
+  width: 100%; /* Sets width to 100% of the parent */
+}
+
+.intro section p {
+  display: flex; /* Applies flexbox layout */
+  font-style: italic; /* Italicizes text */
+}
+
+.intro section p:nth-of-type(1) {
+  justify-content: start; /* Aligns first paragraph to the start */
+}
+
+.intro section p:nth-of-type(2) {
+  justify-content: center; /* Centers second paragraph */
+}
+
+.intro section p:nth-of-type(3) {
+  justify-content: end; /* Aligns third paragraph to the end */
+}
+
+.intro section p span {
+  color: #c5c5c5; /* Sets text color */
+  background-color: hwb(
+    40 97% 2% / 0.022
+  ); /* Sets background color with transparency */
+  text-align: justify; /* Justifies text */
+  padding: 10px; /* Adds padding */
+  font-size: 26px; /* Sets font size */
+  font-weight: semi-bold; /* Sets font weight */
+  font-family: Arial, Helvetica, sans-serif; /* Sets font family */
+  display: inline-block; /* Ensures span elements behave like inline-block elements */
+}
+
+/* Image box styles */
 .imagebox {
-    width: 100vw;
-    display: flex;
-    justify-content: flex-end;
+  display: flex; /* Applies flexbox layout */
+  justify-content: end; /* Aligns children to the end */
 }
+
+/* Divider styles */
+.divider {
+  height: 2px; /* Sets height */
+  width: 80%; /* Sets width */
+  margin: 20px auto; /* Centers the divider and adds vertical margin */
+  background-color: #363637; /* Sets background color */
+}
+
+/* Button group styles */
+.button-group {
+  margin: 0 auto; /* Centers the button group */
+  width: 75%; /* Sets width */
+  display: flex; /* Applies flexbox layout */
+  justify-content: space-between; /* Distributes space between buttons */
+}
+
+.button-group button {
+  height: 250px; /* Sets button height */
+  width: 240px; /* Sets button width */
+  background: #6e6f71; /* Sets background color */
+  color: #ffd19c; /* Sets text color */
+  border: 3px solid #343434; /* Sets border color and width */
+}
+
+/* For Testing - Uncomment for border debugging */
+/* .border {
+  border: 1px solid blue;
+} */
