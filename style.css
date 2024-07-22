@@ -27,6 +27,29 @@ body {
   flex-direction: column; /* Arranges children in a column */
 }
 
+.notification-bar {
+  background-color: hwb(0 12% 88% / 0.915);
+  color: #e2e2e2; 
+  padding: 10px;
+  border: 1px solid hsl(0, 0%, 24%); 
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Ensures the bar stays on top */
+  font-size: 14px;
+}
+
+.notification-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.notification-content p {
+  margin: 5px 0;
+}
+
 /* Header styles */
 .header {
   display: flex; /* Applies flexbox layout */
