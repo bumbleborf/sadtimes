@@ -27,6 +27,10 @@ body {
   flex-direction: column; /* Arranges children in a column */
 }
 
+main {
+  flex: 1;
+}
+
 /* .notification-bar {
   background-color: hwb(0 12% 88% / 0.915);
   color: #e2e2e2; 
@@ -48,7 +52,7 @@ body {
 .notification-bar {
   background-color: hwb(0 12% 88% / 0.915);
   color: #e2e2e2;
-  padding: 10px;
+  padding: 4px;
   border: 1px solid hsl(0, 0%, 24%);
   font-size: 14px;
   overflow: hidden;
@@ -56,7 +60,7 @@ body {
 }
 
 .notification-content {
-  display: inline-block;
+  /* display: inline-block; */
   padding-left: 100%;
   animation: scroll 25s linear infinite;
 }
@@ -80,7 +84,7 @@ body {
   display: flex; /* Applies flexbox layout */
   justify-content: space-between; /* Distributes space between children */
   align-items: center; /* Aligns children vertically in the center */
-  padding: 30px 0; /* Adds vertical padding */
+  padding: 20px 0; /* Adds vertical padding */
 }
 
 .logo {
@@ -249,6 +253,99 @@ body {
   .social-icons-mobile {
     display: flex; /* Displays mobile social icons */
   }
+
+  .footer-logo {
+    display: none;
+  }
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+  padding: 20px 5%;
+  background-color: #33333398;
+  color: #fff;
+  font-size: 14px;
+}
+
+.footer-logo img {
+  max-width: 150px;
+  margin-right: 20px;
+}
+
+.footer-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-contact p {
+  margin: 5px 0;
+}
+
+.footer-social {
+  display: flex;
+  margin-top: 10px;
+}
+
+.footer-social img {
+  max-width: 24px;
+  margin-right: 10px;
+}
+
+.footer-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-links {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin: 5px 0;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.footer-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.footer-form input {
+  padding: 8px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 4px;
+}
+
+.footer-form button {
+  padding: 8px 16px;
+  background-color: hsl(0, 0%, 35%);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.footer-form button:hover {
+  background-color: #000000;
 }
 
 /* Uncomment for border debugging */
