@@ -5,6 +5,7 @@
   padding: 0; /* Removes default padding */
 }
 
+<<<<<<< Updated upstream
 /* Remove default button styling for a clean slate */
 button {
   background: none; /* Removes default background */
@@ -26,11 +27,37 @@ body {
   display: flex; /* Applies flexbox layout */
   flex-direction: column; /* Arranges children in a column */
 }
+=======
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.logo img {
+  max-width: 400px;
+  height: auto;
+}
+.social-icons img {
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+}
+body {
+  background-image: url('./images/background1.jpg');
+  height: 100vh;
+  width: 100vw;
+  font-family: 'Inconsolata', monospace;
+  display: flex;
+  flex-direction: column;
+}
+>>>>>>> Stashed changes
 
 main {
   flex: 1;
 }
 
+<<<<<<< Updated upstream
 /* .notification-bar {
   background-color: hwb(0 12% 88% / 0.915);
   color: #e2e2e2; 
@@ -112,14 +139,31 @@ main {
   min-width: 400px; /* Sets minimum width */
   height: auto; /* Maintains aspect ratio */
   margin-right: 12%; /* Adds right margin */
+=======
+.artistlist {
+  height: 300px;
+  width: 600px;
+  margin-right: 100px;
+  float: right;
+>>>>>>> Stashed changes
 }
 
 /* Intro section styles */
 .intro {
+<<<<<<< Updated upstream
   margin: 0 auto; /* Centers the intro section horizontally */
   width: 80%; /* Sets width to 80% of the parent */
   display: flex; /* Applies flexbox layout */
   justify-content: start; /* Aligns children to the start */
+=======
+  color: whitesmoke;
+  width: 1100px;
+  height: 100px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: hwb(40 97% 2% / 0.022);
+>>>>>>> Stashed changes
 }
 
 .intro section {
@@ -158,8 +202,14 @@ main {
 
 /* Image box styles */
 .imagebox {
+<<<<<<< Updated upstream
   display: flex; /* Applies flexbox layout */
   justify-content: end; /* Aligns children to the end */
+=======
+  width: 100vw;
+  display: flex;
+  justify-content: flex-end;
+>>>>>>> Stashed changes
 }
 
 /* Divider styles */
@@ -347,8 +397,11 @@ main {
 .footer-form button:hover {
   background-color: #000000;
 }
+<<<<<<< Updated upstream
 
 /* Uncomment for border debugging */
 /* .border {
   border: 1px solid blue;
 } */
+=======
+>>>>>>> Stashed changes
