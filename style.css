@@ -18,7 +18,7 @@ button {
 body {
   background: url('./images/background1.jpg') center / cover no-repeat;
   height: 100%; 
-  width: 100vw; 
+  width: 100%; 
   font-family: 'Inconsolata', monospace; 
   display: flex; 
   flex-direction: column; 
@@ -152,79 +152,76 @@ main {
 }
 
 .button-group button {
-  height: 300px; /* Sets button height */
-  width: 270px; /* Sets button width */
-  font-size: 24px; /* Sets font size */
-  font-style: italic; /* Italicizes text */
-  color: #ffd19c; /* Sets text color */
-  outline: 5px solid rgba(52, 52, 52, 0.5); /* Sets outline color and width */
+  height: 300px; 
+  width: 270px;
+  font-size: 24px; 
+  font-style: italic; 
+  color: #ffd19c; 
+  outline: 5px solid rgba(52, 52, 52, 0.5); 
 }
 
-/* Sets background for each button with gradient overlay */
 .button-group button:nth-of-type(1) {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url('./images/tickets.png') center/cover; /* Shorthand for background image, position, and size */
+    url('./images/tickets.png') center/cover; 
 }
 .button-group button:nth-of-type(2) {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url('./images/experiences.png') center/cover; /* Shorthand for background image, position, and size */
+    url('./images/experiences.png') center/cover;
 }
 .button-group button:nth-of-type(3) {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url('./images/merch.png') center/cover; /* Shorthand for background image, position, and size */
+    url('./images/merch.png') center/cover; 
 }
 
-/* Mobile social icons */
 .social-icons-mobile {
-  display: none; /* Hidden by default */
-  width: 80%; /* Sets width */
-  justify-content: center; /* Centers content */
-  margin: 0 auto; /* Centers element */
-  position: fixed; /* Fixes the element's position */
-  bottom: 0; /* Positions it at the bottom of the viewport */
-  left: 50%; /* Centers the element horizontally */
-  transform: translateX(-50%); /* Adjusts for the element's width */
-  margin-bottom: 40px; /* Adds bottom margin */
-  padding: 10px; /* Adds padding */
-  z-index: 1000; /* Ensures it stays on top of other elements */
+  display: none; 
+  width: 80%; 
+  justify-content: center; 
+  margin: 0 auto;
+  position: fixed;
+  bottom: 0; 
+  left: 50%;
+  transform: translateX(-50%); 
+  margin-bottom: 40px; 
+  padding: 10px;
+  z-index: 1000; 
 }
 
 .social-icons-mobile img {
-  width: 20px; /* Sets width */
-  height: 20px; /* Sets height */
-  margin-left: 15px; /* Adds left margin between icons */
+  width: 20px; 
+  height: 20px; 
+  margin-left: 15px;
 }
 
-/* Responsive design for smaller screens */
 @media (max-width: 768px) {
   .button-group {
-    flex-direction: column; /* Changes direction to column on smaller screens */
-    align-items: center; /* Centers buttons horizontally */
-    width: 80%; /* Adjusts width */
+    flex-direction: column; 
+    align-items: center; 
+    width: 80%; 
   }
 
   .button-group button {
-    height: 80px; /* Sets button height */
-    width: 100%; /* Sets button width */
-    outline: 2px solid rgba(52, 52, 52, 0.5); /* Sets outline color and width */
-    margin-bottom: 10px; /* Adds bottom margin */
+    height: 80px; 
+    width: 100%; 
+    outline: 2px solid rgba(52, 52, 52, 0.5); 
+    margin-bottom: 10px; 
   }
 
   .intro {
-    display: none; /* Hides intro section */
+    display: none; 
   }
 
   .imagebox img {
-    margin-right: 0px; /* Removes right margin */
-    padding: 7%; /* Adds padding */
+    margin-right: 0px; 
+    padding: 7%; 
   }
 
   .social-icons {
-    display: none; /* Hides desktop social icons */
+    display: none; 
   }
 
   .social-icons-mobile {
-    display: flex; /* Displays mobile social icons */
+    display: flex; 
   }
 
   .footer-logo {
@@ -320,8 +317,3 @@ main {
 .footer-form button:hover {
   background-color: #000000;
 }
-
-/* Uncomment for border debugging */
-/* .border {
-  border: 1px solid blue;
-} */
